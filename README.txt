@@ -2,10 +2,10 @@
 Source installation information for modders
 -------------------------------------------
 This code follows the Minecraft Forge installation methodology. It will apply
-some small patches to the vanilla MCP source code, giving you and it access 
+some small patches to the vanilla MCP source code, giving you and this code access
 to some of the data and functions you need to build a successful mod.
 
-Note also that the patches are built against "unrenamed" MCP source code (aka
+Note also that the patches are built against MCP source code that has not been renamed (aka
 srgnames) - this means that you will not be able to read them directly against
 normal code.
 
@@ -26,7 +26,7 @@ If you prefer to use Eclipse:
    or run "gradlew eclipse" to generate the project.
 (Current Issue)
 4. Open Project > Run/Debug Settings > Edit runClient and runServer > Environment
-5. Edit MOD_CLASSES to show [modid]%%[Path]; 2 times rather then the generated 4.
+5. Edit MOD_CLASSES to show [modid]%%[Path]; 2 times rather than the generated 4.
 
 If you prefer to use IntelliJ:
 1. Open IDEA, and import project.
@@ -34,7 +34,7 @@ If you prefer to use IntelliJ:
 3. Run the following command: "gradlew genIntellijRuns" (./gradlew genIntellijRuns if you are on Mac/Linux)
 4. Refresh the Gradle Project in IDEA if required.
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can run "gradlew --refresh-dependencies" to refresh the local cache. "gradlew clean" to reset everything {this does not affect your code} and then start the processs again.
+If at any point you are missing libraries in your IDE, or you've run into problems you can run "gradlew --refresh-dependencies" to refresh the local cache. "gradlew clean" to reset everything {this does not affect your code} and then start the process again.
 
 Should it still not work, 
 Refer to #ForgeGradle on EsperNet for more information about the gradle environment.
